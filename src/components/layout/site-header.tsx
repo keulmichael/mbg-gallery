@@ -1,6 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
 
-import { siteConfig } from "@/config/site";
 import { navigation } from "@/content/mbg";
 
 export function SiteHeader() {
@@ -11,7 +11,14 @@ export function SiteHeader() {
           href="/"
           className="w-fit text-[0.78rem] font-semibold uppercase tracking-[0.24em] text-ink focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-clay/35"
         >
-          {siteConfig.name}
+          <Image
+            src="/mbg/logo-mbg-gallery.png"
+            alt="MBG Gallery — Marie Battaglini Gallery"
+            width={1080}
+            height={698}
+            priority
+            className="h-10 w-auto sm:h-11"
+          />
         </Link>
         <nav aria-label="Navigation principale" className="overflow-x-auto">
           <ul className="flex min-w-max items-center gap-1">

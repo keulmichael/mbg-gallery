@@ -1,6 +1,7 @@
 export const navigation = [
   { href: "/", label: "Accueil" },
   { href: "/artistes", label: "Artistes" },
+  { href: "/marie-battaglini", label: "Marie Battaglini" },
   { href: "/oeuvres", label: "Oeuvres" },
   { href: "/expositions", label: "Expositions" },
   { href: "/contact", label: "Contact" },
